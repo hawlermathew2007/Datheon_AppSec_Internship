@@ -1,0 +1,33 @@
+# Nmap 7.94SVN scan initiated Fri Nov  6 19:24:21 2026 as: nmap -v -A -oA port_serv_scan-url8574 104.18.33.123
+Nmap scan report for 104.18.33.123
+Host is up (0.0038s latency).
+Not shown: 991 filtered tcp ports (no-response)
+PORT     STATE  SERVICE     VERSION
+53/tcp   open   domain?
+80/tcp   open   http        Cloudflare http proxy
+|_http-server-header: cloudflare
+|_http-title: Intrusion Prevention Violation
+113/tcp  closed ident
+443/tcp  open   ssl/http    nginx
+|_http-server-header: cloudflare
+2000/tcp open   cisco-sccp?
+5060/tcp open   sip?
+8010/tcp open   xmpp?
+| ssl-cert: Subject: commonName=104.18.33.123
+| Subject Alternative Name: DNS:104.18.33.123
+| Issuer: commonName=FG7H1GTB26000803/organizationName=Fortinet/stateOrProvinceName=California/countryName=US
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-11-18T22:01:10
+| Not valid after:  2026-11-10T11:24:38
+| MD5:   8b66:56ed:b6b3:56bd:6247:e34b:ef4a:1c98
+|_SHA-1: 13e6:de66:7bd8:2248:69af:298c:f27e:f51c:64ae:84e8
+8080/tcp open   http        Cloudflare http proxy
+|_http-server-header: cloudflare
+8443/tcp open   ssl/http    nginx
+|_http-server-header: cloudflare
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov  6 19:28:10 2026 -- 1 IP address (1 host up) scanned in 229.43 seconds

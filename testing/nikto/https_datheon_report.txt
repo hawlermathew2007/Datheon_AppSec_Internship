@@ -1,0 +1,11 @@
+- Nikto v2.1.5/2.1.5
++ Target Host: datheon.in
++ Target Port: 443
++ GET /cgi.cgi/: The anti-clickjacking X-Frame-Options header is not present.
++ GET /cgi.cgi/: Uncommon header 'x-vercel-id' found, with contents: sin1::wgfqj-1794015951648-f49e07dd240e
++ GET /cgi.cgi/: Uncommon header 'x-vercel-mitigated' found, with contents: deny
++ GET /: Hostname 'datheon.in' does not match certificate's CN 'no-sni.vercel-infra.com'
++ GET /: Uncommon header 'x-vercel-error' found, with contents: DEPLOYMENT_NOT_FOUND
++ GET /: Uncommon header 'strict-transport-security' found, with contents: max-age=63072000
++ GET /lists/admin/: Uncommon header 'x-vercel-challenge-token' found, with contents: 2.1794015957.60.MjU2MTIxOWRkMWE2ZGU4NWJkMjdmNmZiMzI0YWYzYmU7Njg5NmU4MDM7M2FiNTg3OTFjMmJiZWU3YTIzOThmNTI3ZDQ1MDI5MWE2ZDM2YjZhZTszOzqTas1v9pnXmTm+47UBF8xLz9u4ubvsucdx9+27rmgugQe0yAicZKG2rPO0Lhruy1x6kpTy2pf/CDAx0z9bOfJ95RU=.cde204c2b4c9dc9b9f9c0522ad168ba0
++ GET /SiteServer/admin/: /SiteServer/admin/: Site Server components admin. Default account may be 'LDAP_Anonymous', pass is 'LdapPassword_1'. see http://www.wiretrip.net/rfp/p/doc.asp/i1/d69.htm

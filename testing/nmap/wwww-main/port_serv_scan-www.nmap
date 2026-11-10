@@ -1,0 +1,119 @@
+# Nmap 7.94SVN scan initiated Wed Nov  4 21:41:04 2026 as: nmap -v -A -oA port_serv_scan-www 66.33.60.130
+Nmap scan report for 66.33.60.130
+Host is up (0.0077s latency).
+Not shown: 993 filtered tcp ports (no-response)
+PORT     STATE  SERVICE     VERSION
+53/tcp   open   domain?
+80/tcp   open   http
+|_http-title: Web Filter Violation
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.0 403 Forbidden
+|     Content-Type: text/html
+|     Cache-Control: no-cache
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     Content-Security-Policy: frame-ancestors 'self'
+|     Content-Length: 5335
+|     <!-- IE friendly error message walkround. 
+|     error message from server is less than 
+|     bytes IE v5+ will use its own error 
+|     message instead of the one returned by 
+|     server. --> 
+|     <!DOCTYPE html>
+|     <html lang="en">
+|     <head>
+|     <meta charset="UTF-8">
+|_    <meta http-equiv="X-UA-Co
+113/tcp  closed ident
+443/tcp  open   ssl/https
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: Vercel
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 308 Permanent Redirect
+|     Content-Type: text/plain
+|     Location: https:///
+|     Refresh: 0;url=https:///
+|     server: Vercel
+|     Redirecting...
+|   RTSPRequest: 
+|     HTTP/0.0 500 Internal Server Error
+|     Connection: close
+|     Content-Type: text/plain; charset=utf-8
+|_    INTERNAL_SERVER_ERROR
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| ssl-cert: Subject: commonName=no-sni.vercel-infra.com
+| Subject Alternative Name: DNS:no-sni.vercel-infra.com
+| Issuer: commonName=FG7H1GTB26000803/organizationName=Fortinet/stateOrProvinceName=California/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2026-09-21T20:08:42
+| Not valid after:  2026-11-08T13:19:01
+| MD5:   e9c7:edf4:3035:1eed:6ca1:cc77:4b5a:d5da
+|_SHA-1: 0806:b1e6:f170:ee31:beea:58ab:f0b3:50b3:7fb9:45d1
+2000/tcp open   cisco-sccp?
+5060/tcp open   sip?
+8010/tcp open   xmpp?
+| ssl-cert: Subject: commonName=66.33.60.130
+| Subject Alternative Name: DNS:66.33.60.130
+| Issuer: commonName=FG7H1GTB26000803/organizationName=Fortinet/stateOrProvinceName=California/countryName=US
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-11-18T22:01:10
+| Not valid after:  2026-11-08T13:16:40
+| MD5:   c06f:e0ca:4ddb:d461:9d7a:c85f:1292:7361
+|_SHA-1: 4483:0209:81eb:91d2:f8bb:8062:2b06:e734:6029:53b3
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.94SVN%I=7%D=11/4%Time=6AEB35FA%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,15C9,"HTTP/1\.0\x20403\x20Forbidden\r\nContent-Type:\x20text/
+SF:html\r\nCache-Control:\x20no-cache\r\nX-Frame-Options:\x20SAMEORIGIN\r\
+SF:nX-XSS-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20no
+SF:sniff\r\nContent-Security-Policy:\x20frame-ancestors\x20'self'\r\nConte
+SF:nt-Length:\x205335\r\n\r\n<!--\x20IE\x20friendly\x20error\x20message\x2
+SF:0walkround\.\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20if\x2
+SF:0error\x20message\x20from\x20server\x20is\x20less\x20than\x20\x20\x20\n
+SF:\x20\x20\x20\x20\x20512\x20bytes\x20IE\x20v5\+\x20will\x20use\x20its\x2
+SF:0own\x20error\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20message\x20inste
+SF:ad\x20of\x20the\x20one\x20returned\x20by\x20\x20\x20\x20\x20\x20\n\x20\
+SF:x20\x20\x20\x20server\.\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20-->\x20\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\n<!DOCTYPE\x20html>\n<html\x20lang=\"en\">\n\x20\x20\x20\x20<head>\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20<meta\x20charset=\"UTF-8\">\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20<meta\x20http-equiv=\"X-UA-Co");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.94SVN%I=7%D=11/4%Time=6AEB3609%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,8A,"HTTP/1\.0\x20308\x20Permanent\x20Redirect\r\nContent-Typ
+SF:e:\x20text/plain\r\nLocation:\x20https:///\r\nRefresh:\x200;url=https:/
+SF://\r\nserver:\x20Vercel\r\n\r\nRedirecting\.\.\.")%r(HTTPOptions,8A,"HT
+SF:TP/1\.0\x20308\x20Permanent\x20Redirect\r\nContent-Type:\x20text/plain\
+SF:r\nLocation:\x20https:///\r\nRefresh:\x200;url=https:///\r\nserver:\x20
+SF:Vercel\r\n\r\nRedirecting\.\.\.")%r(RTSPRequest,79,"HTTP/0\.0\x20500\x2
+SF:0Internal\x20Server\x20Error\r\nConnection:\x20close\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\n\r\nINTERNAL_SERVER_ERROR\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov  4 21:44:30 2026 -- 1 IP address (1 host up) scanned in 205.75 seconds

@@ -1,0 +1,3 @@
+whatweb http://datheon.in https://wwww.datheon.in https://url8574.datheon.in \
+| sed -E 's/\x1B\[[0-9;]*[[:alpha:]]//g' \
+| tee banner_grabbing.txt

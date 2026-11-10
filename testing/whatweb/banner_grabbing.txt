@@ -1,0 +1,308 @@
+WhatWeb report for http://datheon.in
+Status    : 308 Permanent Redirect
+Title     : <None>
+IP        : 76.76.21.93
+Country   : UNITED STATES, US
+
+Summary   : HTTPServer[Vercel], RedirectLocation[https://datheon.in/]
+
+Detected Plugins:
+[ HTTPServer ]
+        HTTP server header string. This plugin also attempts to 
+        identify the operating system from the server header. 
+
+        String       : Vercel (from server string)
+
+[ RedirectLocation ]
+        HTTP Server string location. used with http-status 301 and 
+        302 
+
+        String       : https://datheon.in/ (from location)
+
+HTTP Headers:
+        HTTP/1.1 308 Permanent Redirect
+        Content-Type: text/plain
+        Location: https://datheon.in/
+        Refresh: 0;url=https://datheon.in/
+        server: Vercel
+        Transfer-Encoding: chunked
+
+WhatWeb report for https://url8574.datheon.in
+Status    : 404 Not Found
+Title     : 404 Not Found
+IP        : 172.64.154.133
+Country   : RESERVED, ZZ
+
+Summary   : Cookies[__cf_bm], HTTPServer[cloudflare], HttpOnly[__cf_bm], Script, UncommonHeaders[cf-cache-status,cf-ray]
+
+Detected Plugins:
+[ Cookies ]
+        Display the names of cookies in the HTTP headers. The 
+        values are not returned to save on space. 
+
+        String       : __cf_bm
+
+[ HTTPServer ]
+        HTTP server header string. This plugin also attempts to 
+        identify the operating system from the server header. 
+
+        String       : cloudflare (from server string)
+
+[ HttpOnly ]
+        If the HttpOnly flag is included in the HTTP set-cookie 
+        response header and the browser supports it then the cookie 
+        cannot be accessed through client side script - More Info: 
+        http://en.wikipedia.org/wiki/HTTP_cookie 
+
+        String       : __cf_bm
+
+[ Script ]
+        This plugin detects instances of script HTML elements and 
+        returns the script language/type. 
+
+
+[ UncommonHeaders ]
+        Uncommon HTTP server headers. The blacklist includes all 
+        the standard headers and many non standard but common ones. 
+        Interesting but fairly common headers should have their own 
+        plugins, eg. x-powered-by, server and x-aspnet-version. 
+        Info about headers can be found at www.http-stats.com 
+
+        String       : cf-cache-status,cf-ray (from headers)
+
+HTTP Headers:
+        HTTP/1.1 404 Not Found
+        Date: Fri, 06 Nov 2026 11:10:40 GMT
+        Content-Type: text/html
+        Transfer-Encoding: chunked
+        Connection: close
+        Server: cloudflare
+        set-cookie: __cf_bm=gxePUbuHGNO90ypignEgt1INPmem3umyGV5ABfAiFhg-1793963440.4028704-1.0.1.1-JcOuEXTBQ8mi9CADmSs6qXsFCOtZYXbxikitTuhUOBEy
+YO55n04O2lPDc4G7fiGifiek5mevPLOSCM7D9lrKVRRajEhcmDOnO7qcXt40711B6AVOZkxlHBXzbgaz_1Xh; HttpOnly; SameSite=None; Secure; Path=/; Domain=url8574.d
+atheon.in; Expires=Fri, 06 Nov 2026 11:40:40 GMT
+        cf-cache-status: DYNAMIC
+        Content-Encoding: gzip
+        CF-RAY: a563a72e8c06c8b5-SIN
+
+WhatWeb report for https://datheon.in/
+Status    : 308 Permanent Redirect
+Title     : <None>
+IP        : 66.33.60.194
+Country   : UNITED STATES, US
+
+Summary   : HTTPServer[Vercel], RedirectLocation[https://www.datheon.in/], Strict-Transport-Security[max-age=63072000], UncommonHeaders[x-verce
+l-id]
+
+Detected Plugins:
+[ HTTPServer ]
+        HTTP server header string. This plugin also attempts to 
+        identify the operating system from the server header. 
+
+        String       : Vercel (from server string)
+
+[ RedirectLocation ]
+        HTTP Server string location. used with http-status 301 and 
+        302 
+
+        String       : https://www.datheon.in/ (from location)
+
+[ Strict-Transport-Security ]
+        Strict-Transport-Security is an HTTP header that restricts 
+        a web browser from accessing a website without the security 
+        of the HTTPS protocol. 
+
+        String       : max-age=63072000
+
+[ UncommonHeaders ]
+        Uncommon HTTP server headers. The blacklist includes all 
+        the standard headers and many non standard but common ones. 
+        Interesting but fairly common headers should have their own 
+        plugins, eg. x-powered-by, server and x-aspnet-version. 
+        Info about headers can be found at www.http-stats.com 
+
+        String       : x-vercel-id (from headers)
+
+HTTP Headers:
+        HTTP/1.1 308 Permanent Redirect
+        Cache-Control: public, max-age=0, must-revalidate
+        Content-Type: text/plain
+        Date: Fri, 06 Nov 2026 11:10:41 GMT
+        Location: https://www.datheon.in/
+        Refresh: 0;url=https://www.datheon.in/
+        Server: Vercel
+        Strict-Transport-Security: max-age=63072000
+        X-Vercel-Id: sin1::6c8f4-1793963441159-0ae062c82bf7
+        Connection: close
+        Transfer-Encoding: chunked
+
+WhatWeb report for https://www.datheon.in
+Status    : 200 OK
+Title     : Datheon — AI Systems &amp; Automation Studio
+IP        : 76.76.21.61
+Country   : UNITED STATES, US
+
+Summary   : Email[hello@datheon.in], HTML5, HTTPServer[Vercel], Open-Graph-Protocol[website], Script, Strict-Transport-Security[max-age=6307200
+0], UncommonHeaders[access-control-allow-origin,x-matched-path,x-nextjs-prerender,x-nextjs-stale-time,x-vercel-cache,x-vercel-id]
+
+Detected Plugins:
+[ Email ]
+        Extract email addresses. Find valid email address and 
+        syntactically invalid email addresses from mailto: link 
+        tags. We match syntactically invalid links containing 
+        mailto: to catch anti-spam email addresses, eg. bob at 
+        gmail.com. This uses the simplified email regular 
+        expression from 
+        http://www.regular-expressions.info/email.html for valid 
+        email address matching. 
+
+        String       : hello@datheon.in
+        String       : hello@datheon.in
+
+[ HTML5 ]
+        HTML version 5, detected by the doctype declaration 
+
+
+[ HTTPServer ]
+        HTTP server header string. This plugin also attempts to 
+        identify the operating system from the server header. 
+
+        String       : Vercel (from server string)
+
+[ Open-Graph-Protocol ]
+        The Open Graph protocol enables you to integrate your Web 
+        pages into the social graph. It is currently designed for 
+        Web pages representing profiles of real-world things . 
+        things like movies, sports teams, celebrities, and 
+        restaurants. Including Open Graph tags on your Web page, 
+        makes your page equivalent to a Facebook Page. 
+
+        Version      : website
+
+[ Script ]
+        This plugin detects instances of script HTML elements and 
+        returns the script language/type. 
+
+
+[ Strict-Transport-Security ]
+        Strict-Transport-Security is an HTTP header that restricts 
+        a web browser from accessing a website without the security 
+        of the HTTPS protocol. 
+
+        String       : max-age=63072000
+
+[ UncommonHeaders ]
+        Uncommon HTTP server headers. The blacklist includes all 
+        the standard headers and many non standard but common ones. 
+        Interesting but fairly common headers should have their own 
+        plugins, eg. x-powered-by, server and x-aspnet-version. 
+        Info about headers can be found at www.http-stats.com 
+
+        String       : access-control-allow-origin,x-matched-path,x-nextjs-prerender,x-nextjs-stale-time,x-vercel-cache,x-vercel-id (from heade
+rs)
+
+HTTP Headers:
+        HTTP/1.1 200 OK
+        Access-Control-Allow-Origin: *
+        Age: 62655
+        Cache-Control: public, max-age=0, must-revalidate
+        Content-Disposition: inline
+        Content-Encoding: gzip
+        Content-Type: text/html; charset=utf-8
+        Date: Fri, 06 Nov 2026 11:10:40 GMT
+        Etag: W/"574f55c0b826b9b80ae3080374f931d1"
+        Server: Vercel
+        Strict-Transport-Security: max-age=63072000
+        Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+        X-Matched-Path: /
+        X-Nextjs-Prerender: 1
+        X-Nextjs-Stale-Time: 300
+        X-Vercel-Cache: HIT
+        X-Vercel-Id: sin1::7rw68-1793963440358-0bef898c3c8b
+        Connection: close
+        Transfer-Encoding: chunked
+
+WhatWeb report for https://www.datheon.in/
+Status    : 200 OK
+Title     : Datheon — AI Systems &amp; Automation Studio
+IP        : 66.33.60.130
+Country   : UNITED STATES, US
+
+Summary   : Email[hello@datheon.in], HTML5, HTTPServer[Vercel], Open-Graph-Protocol[website], Script, Strict-Transport-Security[max-age=6307200
+0], UncommonHeaders[access-control-allow-origin,x-matched-path,x-nextjs-prerender,x-nextjs-stale-time,x-vercel-cache,x-vercel-id]
+
+Detected Plugins:
+[ Email ]
+        Extract email addresses. Find valid email address and 
+        syntactically invalid email addresses from mailto: link 
+        tags. We match syntactically invalid links containing 
+        mailto: to catch anti-spam email addresses, eg. bob at 
+        gmail.com. This uses the simplified email regular 
+        expression from 
+        http://www.regular-expressions.info/email.html for valid 
+        email address matching. 
+
+        String       : hello@datheon.in
+        String       : hello@datheon.in
+
+[ HTML5 ]
+        HTML version 5, detected by the doctype declaration 
+
+
+[ HTTPServer ]
+        HTTP server header string. This plugin also attempts to 
+        identify the operating system from the server header. 
+
+        String       : Vercel (from server string)
+
+[ Open-Graph-Protocol ]
+        The Open Graph protocol enables you to integrate your Web 
+        pages into the social graph. It is currently designed for 
+        Web pages representing profiles of real-world things . 
+        things like movies, sports teams, celebrities, and 
+        restaurants. Including Open Graph tags on your Web page, 
+        makes your page equivalent to a Facebook Page. 
+
+        Version      : website
+
+[ Script ]
+        This plugin detects instances of script HTML elements and 
+        returns the script language/type. 
+
+
+[ Strict-Transport-Security ]
+        Strict-Transport-Security is an HTTP header that restricts 
+        a web browser from accessing a website without the security 
+        of the HTTPS protocol. 
+
+        String       : max-age=63072000
+
+[ UncommonHeaders ]
+        Uncommon HTTP server headers. The blacklist includes all 
+        the standard headers and many non standard but common ones. 
+        Interesting but fairly common headers should have their own 
+        plugins, eg. x-powered-by, server and x-aspnet-version. 
+        Info about headers can be found at www.http-stats.com 
+
+        String       : access-control-allow-origin,x-matched-path,x-nextjs-prerender,x-nextjs-stale-time,x-vercel-cache,x-vercel-id (from heade
+rs)
+
+HTTP Headers:
+        HTTP/1.1 200 OK
+        Access-Control-Allow-Origin: *
+        Age: 62657
+        Cache-Control: public, max-age=0, must-revalidate
+        Content-Disposition: inline
+        Content-Encoding: gzip
+        Content-Type: text/html; charset=utf-8
+        Date: Fri, 06 Nov 2026 11:10:42 GMT
+        Etag: W/"574f55c0b826b9b80ae3080374f931d1"
+        Server: Vercel
+        Strict-Transport-Security: max-age=63072000
+        Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+        X-Matched-Path: /
+        X-Nextjs-Prerender: 1
+        X-Nextjs-Stale-Time: 300
+        X-Vercel-Cache: HIT
+        X-Vercel-Id: sin1::b8rvb-1793963442209-574a70beaec5
+        Connection: close
+        Transfer-Encoding: chunked
